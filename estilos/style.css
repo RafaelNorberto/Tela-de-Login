@@ -12,7 +12,7 @@
 
 
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -36,7 +36,6 @@ section#login{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     background-color: white;
     width: 250px;
     height: 515px;
@@ -46,6 +45,7 @@ section#login{
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -68,25 +68,45 @@ div#formulario{
 }
 
 div#formulario > p{
+    margin-top: 10px;
     font-size: 0.8em;
     text-align: justify;
 }
 
 form > div.campo {
+    text-align: left;
     background-color: var(--cor004);
     display: block;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
-    margin: 5px 0px;
+    border: 2px solid #e9b12e;
+    border-radius: 8px;
+    margin: 10px 0px;
 }
 
 div.campo > label{
     display: none;
 }
 
+
+div.campo > input {
+    font-size: 1em;
+    background-color: #f1d89d;
+    width: calc(100% - 44px);
+    height: 100%;
+    border: 0px;
+    border-radius: 5px;
+    border: 0px;
+    border-radius: 8px;    
+}
+
+div.campo >input:focus-within{
+    background-color: white;
+    border: none;
+}
+
 form >input[type=submit]{
-    margin-top: 5px;
+    margin-top: 10px;
     display: block;
     font-size: 1em;
     width: 100%;
@@ -107,7 +127,7 @@ form > input[type=submit]:hover{
 
 form > a.botao{
     margin-top: 5px;
-    padding-top: 5px;
+    padding-top: 7.5px;
     display: block;
     text-align: center;
     font-size: 1em;
