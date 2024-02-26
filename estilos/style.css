@@ -5,6 +5,7 @@
 :root{
     --cor001:#047e7e;
     --cor002:#F2BD41;
+    --cor003: #04dbdb;
     }
 
 
@@ -40,6 +41,9 @@ section#login{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
 
 }
 
